@@ -1,5 +1,17 @@
-# eleicoes2016
-Guia do IMP para as Eleições 2016
+# Descrição
+
+Este repositório contém dados, códigos e gráficos da seguinte publicação:
+
+Meira, R.; Góes, C. (2016).
+“Uma radiografia das eleições municipais brasileiras (1996-2016): fatos e dados”.
+Nota de Política Pública n. 02/2016.
+São Paulo: Instituto Mercado Popular.
+
+O Instituto Mercado Popular tem um compromisso com a reprodutibilidade das análises e modelos publicados sob sua marca. Os dados utilizados para a construção dos gráficos e modelos estatísticos deste artigo, se existentes e não proprietários, serão disponibilizados em www.github.com/omercadopopular. Sempre que possível, os códigos de computador utilizados também serão disponibilizados. Caso você não consiga encontrar os dados em nosso repositório e os queira, contacte diretamente os autores.
+
+# Sobre o Instituto Mercado Popular
+
+O Instituto Mercado Popular é um laboratório de políticas públicas. Nossa missão é racionalizar e democratizar o debate político e econômico no país, provendo alternativas políticas baseadas no estado da arte da evidência científica, disseminando essas ideias entre a população e facilitando transformações que contribuam para uma sociedade livre, aberta e justa.
 
 # Lista de arquivos
 
