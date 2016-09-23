@@ -20,6 +20,8 @@ Usa dados do arquivo resultados19962012.txt,
 organizado com dados brutos do TSE sobre resultados eleitorais,
 para detalhar a distribuicao de prefeituras entre blocos de alianças
 eleitorais distintas (tucanos, petistas e outros) e o papel do PMDB nos outros.
+
+Calcula o número efetivo de partidos em cada eleição.
  
  */
 ///////////////////////////////////////////////////////////////////////////////
@@ -114,3 +116,29 @@ log using dados.log, replace
 		di "Ano: `x'"
 		sum tucanos petistas outros pmdb outros_n if ano == `x'
 	}	
+
+
+///////////////////////////////////////////////////////////////////////////////
+////////////// 4. CALCULAR O NÚMERO EFETIVO DE PARTIDOS POR ANO ///////////////
+///////////////////////////////////////////////////////////////////////////////
+
+preserve
+
+	bysort ano partido: gen n = _N
+	
+	collapse (mean) n, by(ano partido)
+	
+	bysort ano: egen max = sum(n)
+	
+	gen share = n / max
+
+	gen sharesq = share * share
+
+	collapse (mean) max (sum) n share sharesq, by(ano)
+	
+	gen nep = 1 / sharesq
+	
+	export delimited using "nep", replace
+	
+restore
+
