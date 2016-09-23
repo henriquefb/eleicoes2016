@@ -16,8 +16,10 @@
 
 Descrição do projeto
 
-- Detalhar a distribuicao de prefeituras entre blocos de aliancas distintas
-
+Usa dados do arquivo resultados19962012.txt,
+organizado com dados brutos do TSE sobre resultados eleitorais,
+para detalhar a distribuicao de prefeituras entre blocos de alianças
+eleitorais distintas (tucanos, petistas e outros) e o papel do PMDB nos outros.
  
  */
 ///////////////////////////////////////////////////////////////////////////////
@@ -60,7 +62,10 @@ log using dados.log, replace
 	replace partido = "PCdoB" if partido == "PC do B"
 	replace partido = "PTdoB" if partido == "PT do B"
 	
-	// ajustar alianças
+///////////////////////////////////////////////////////////////////////////////
+//////////////////// 3. CALCULAR REPRESENTAÇÃO DE ALIANÇAS ////////////////////
+///////////////////////////////////////////////////////////////////////////////
+
 	
 	// tucanos
 	
@@ -108,9 +113,4 @@ log using dados.log, replace
 	forval x = 1996(4)2012  {
 		di "Ano: `x'"
 		sum tucanos petistas outros pmdb outros_n if ano == `x'
-	}
-	
-	
-	
-	
-	
+	}	
