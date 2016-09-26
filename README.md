@@ -23,3 +23,8 @@ O Instituto Mercado Popular é um laboratório de políticas públicas. Nossa mi
 - [mapa.R](https://github.com/omercadopopular/eleicoes2016/blob/master/mapa.R) (R): Utiliza os dados indexados em "prefeito.csv" para ver quando há coligações entre o PMDB e o PT; e o PMDB e o PSDB. Cria vetores para as coincidências e utiliza as coordenadas geográficas dos municípios onde há coincidência em um mapa.
 
 ## Dados
+
+- [resultados19962012.txt](https://github.com/omercadopopular/eleicoes2016/blob/master/resultados19962012.txt): Arquivo com os dados dos prefeitos e partidos que ganharam as eleições, em cada município, entre 1996 e 2012.
+- [latlong.csv](https://github.com/omercadopopular/eleicoes2016/blob/master/latlong.csv): Arquivo com os dados de população, renda, IDHM, taxa de pobreza, latitude e longitude dos municípios, que é mesclado aos dados do TSE.
+- [matriz-coligacao.csv](https://github.com/omercadopopular/eleicoes2016/blob/master/matriz-coligacao.csv): Matriz de coligações resultante da análise.
+- [matriz-cabecadechapa.csv](https://github.com/omercadopopular/eleicoes2016/blob/master/matriz-cabecadechapa.csv): Matriz de coligações incluíndo apenas cabeças de chapa que é resultante da análise.
