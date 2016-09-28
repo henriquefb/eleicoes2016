@@ -25,6 +25,7 @@ O Instituto Mercado Popular é um laboratório de políticas públicas. Nossa mi
 ## Dados
 
 - [resultados19962012.txt](https://github.com/omercadopopular/eleicoes2016/blob/master/resultados19962012.txt): Arquivo com os dados dos prefeitos e partidos que ganharam as eleições, em cada município, entre 1996 e 2012.
+- [prefeito.csv](https://github.com/omercadopopular/eleicoes2016/blob/master/prefeito.csv): Arquivo que consolida a base de dados, por candidatura, em 2016, com as respectivas dummies partidárias. Este arquivo é utilizado para construir o mapa de alianças.
 - [latlong.csv](https://github.com/omercadopopular/eleicoes2016/blob/master/latlong.csv): Arquivo com os dados de população, renda, IDHM, taxa de pobreza, latitude e longitude dos municípios, que é mesclado aos dados do TSE.
 - [matriz-coligacao.csv](https://github.com/omercadopopular/eleicoes2016/blob/master/matriz-coligacao.csv): Matriz de coligações resultante da análise.
 - [matriz-cabecadechapa.csv](https://github.com/omercadopopular/eleicoes2016/blob/master/matriz-cabecadechapa.csv): Matriz de coligações incluíndo apenas cabeças de chapa que é resultante da análise.
